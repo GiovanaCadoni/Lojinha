@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: blueviolet;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#about img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    color: blueviolet;
+}
+
+.products {
+    flex-wrap: wrap;
+}
+
+.products li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+    margin-left: 32px;
+}
+
+.products li img {
+    max-width: 100%;
+}
+
+.products li h3 {
+    margin: 16px;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: purple;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+@media screen and (max-width: 640px) {
+    .container-flex {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    header img {
+        align-items: center;
+    }
+
+    
+    .products li {
+        list-style: none;
+        max-width: 55%;
+        margin-bottom: 24px;
+        margin-left: 100px;
+    }
+    
+    .products li img {
+        max-width: 100%;
+    }
+    
+    .products li h3 {
+        margin: 16px;
+    }
+    
+    .item-central {
+        margin: 0 5%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+        display: block;
+    }
+
+    .products li {
+        list-style: none;
+        max-width: 30%;
+        margin-bottom: 24px;
+        margin-left: 100px;
+    }
+}
